@@ -387,6 +387,7 @@ If `sapply()` is not able to simplify the result, then the result is just like `
 ```{r comment="", results='hold'}
 sapply(a,sort)
 ```
+Note- `sapply()` must be used with a command (such as length, mean, sort, etc). Running `sapply(a)` will produce an error message.
 
 Let's return to our state example. Before we just had a collection of 51 postal codes. Instead, let's create a list that separates them into three components depending on whether they are in the west, east, or central United States.
 ```{r comment="", results='hold'}
