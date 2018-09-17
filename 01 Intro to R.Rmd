@@ -463,7 +463,9 @@ give.first.and.last <- function(x)
    return(x[i])
 }
 ```
-As you can see, the basic template of an R function is to give it a new name (here `give.first.and.last()`), followed by the syntax `<- function` (this tells R that what comes next is a function), followed by parentheses containing the names of arguments (you choose what to call them) that will be sent to this function (here we use the not very creative `x`), followed by squiggly braces containing R code to do calculations on `x`, with the last line being `return()` containing whatever final result the function calculates. Our function here creates `i` to contain the number 1 and the length of `x` so that it can figure out where the last value is. Then it simply returns `x[i]`, using the square brackets to pick out the values of `x` indexed by `i`, the first and last values in `x`. Let's try our new function out on the numbers 1 to 100.
+As you can see, the basic template of an R function is to give it a new name (here `give.first.and.last()`), followed by the syntax `<- function` (this tells R that what comes next is a function), followed by parentheses containing the names of arguments (you choose what to call them) that will be sent to this function (here we use the not very creative `x`), followed by squiggly braces containing R code to do calculations on `x`, with the last line being `return()` containing whatever final result the function calculates. 
+
+Our above function creates `i` to contain the number 1 and the length of `x` so that it can figure out where the last value is. Then it simply returns `x[i]`, using the square brackets to pick out the values of `x` indexed by `i`, the first and last values in `x`. Let's try our new function out on the numbers 1 to 100.
 
 ```{r comment="", results='hold'}
 give.first.and.last(1:100)
